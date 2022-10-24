@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Karla:wght@400;700&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+
+    /* TO DELETE */
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+//Disable all margins and paddings
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.1rem;
+    height: 0.5rem;
+
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: hsla(132, 61%, 77%, 0);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--bg-body);
+    border-radius: 0.5rem;
+    opacity: 1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hsla(257, 11%, 88%, 0.8);
+    width: 3rem;
+
+}
+
+
+
+li,
+a,
+ul,
+img,
+button {
+    text-decoration: none;
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: black;
+}
+
+//MIXINS (functions) for scss
+
+@mixin centerContainersGrid {
+    display: grid;
+    place-content: center;
+
+}
+
+@mixin spaceBetweenFlexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@mixin spaceBetweenFlexCol {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+
+}
+
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+@mixin fullScreenCenter {
+    @include centerContainersGrid();
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin placeCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+:root {
+
+    /* Colors */   
+    /* Paragraph font size */
+    /* Fonts */
+    /* Borders used */
+    --border-radius-main: 10px;
+
+    --padding-desktop: 0 5rem;
+
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+
+}

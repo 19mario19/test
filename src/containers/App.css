@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Karla:wght@400;700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  /* TO DELETE */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.1rem;
+  height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(161, 232, 175, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-body);
+  border-radius: 0.5rem;
+  opacity: 1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(223, 221, 228, 0.8);
+  width: 3rem;
+}
+
+li,
+a,
+ul,
+img,
+button {
+  text-decoration: none;
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: black;
+}
+
+:root {
+  /* Colors */
+  /* Paragraph font size */
+  /* Fonts */
+  /* Borders used */
+  --border-radius-main: 10px;
+  --padding-desktop: 0 5rem;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Karla', sans-serif;
+}
+/*# sourceMappingURL=App.css.map */
