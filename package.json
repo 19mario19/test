@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./netlify/functions/api.js"
+    "start": "node ./netlify/functions/index.js"
   },
   "keywords": [],
   "author": "",
