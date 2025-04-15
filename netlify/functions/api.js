@@ -1,22 +1,19 @@
 import express, { Router } from "express"
 import serverless from "serverless-http"
+import path from "path"
 
-const api = express()
-
-// Define the router
+const app = express()
 const router = Router()
 
-// Basic route that serves HTML content
+app.use(express.static("public"))
+
+
+
 router.get("/", (req, res) => {
-  let template = /*html*/ `
-    <h1>Test</h1>
-    <p>This is a simple test response from your Express function.</p>
-  `
-  res.send(template)
+  res.redirect("/index.html")
 })
 
-// Use the router under the '/api' path
-api.use("/api", router)
+app.use("/api", router)
 
 // Export the handler for serverless
-export const handler = serverless(api)
+export const handler = serverless(app)
